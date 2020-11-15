@@ -2,17 +2,53 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>UFO Level 1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UFO-Level-1</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <link rel="stylesheet" href="file:///Users/nicolelangford/Downloads/bootstrap.min%20(2).css">
 </head>
-<body>
 
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <form id="form">
+          <div class="form-group">
+            <label for="example-form">Find the Truth</label>
+            <input class="form-control" id="example-form-input" name="example-form" type="text">
+          </div>
+          <button id="button" type="button" class="btn btn-default">Enter</button>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Form Data:
+          <span></span>
+        </h1>
+      </div>
+    </div>
+  </div>
+  <!-- Append UFO Table to HTML -->
+  <table>
+    <thead>
+      <tr>
+        <th>Date/Time</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Country</th>
+        <th>Shape</th>
+        <th>Comment</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
 
 </body>
-
-<script src="data.js"></script>
+<script src="static/data.js"></script>
+<script src="static/index.js"></script>
 
 
 </html>
